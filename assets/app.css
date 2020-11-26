@@ -1,0 +1,191 @@
+body, html {
+  height: 100%;
+  background-color: #2A2B2DFF;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+
+#load {
+  position:absolute;
+  width:600px;
+  height:36px;
+  left:50%;
+  top:40%;
+  margin-left:-300px;
+  overflow:visible;
+  user-select:none;
+  cursor:default;
+}
+
+#load div {
+  position:absolute;
+  width:20px;
+  height:36px;
+  opacity:0;
+  font-family:Helvetica, Arial, sans-serif;
+  animation:move 2s linear infinite;
+  transform:rotate(180deg);
+  font-family: 'poppins' , sans-serif;
+  color:#D9514EFF;
+  font-size: 3rem;
+}
+
+.tekst h1, .tekst p{
+  font-family: 'poppins' , sans-serif;
+  color:#2DA8D8FF;
+}
+
+.tekst h1{
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.tekst p{
+  font-size: 1.5rem;
+}
+
+#load div:nth-child(2) {
+  animation-delay:0.2s;
+}
+
+#load div:nth-child(3) {
+  animation-delay:0.4s;
+}
+
+#load div:nth-child(4) {
+  animation-delay:0.6s;
+}
+
+#load div:nth-child(5) {
+  animation-delay:0.8s;
+}
+
+#load div:nth-child(6) {
+  animation-delay:1s;
+}
+
+#load div:nth-child(7) {
+  animation-delay:1.2s;
+}
+
+#weather {
+  display: none;
+}
+
+#weather > div {
+  padding: 20px;
+}
+
+#weather-temperature {
+  font-size: 2em;
+  font-weight: 200;
+}
+
+#weather-text {
+  font-size: 1em
+}
+
+#location {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+
+@keyframes move {
+  0% {
+    left:0;
+    opacity:0;
+  }
+	35% {
+		left: 41%; 
+		transform:rotate(0deg);
+		opacity:1;
+	}
+	65% {
+		left:59%; 
+		transform:rotate(0deg); 
+		opacity:1;
+	}
+	100% {
+		left:100%; 
+		transform:rotate(-180deg);
+		opacity:0;
+	}
+}
+
+@-moz-keyframes move {
+	0% {
+		left:0; 
+		opacity:0;
+	}
+	35% {
+		left:41%; 
+		transform:rotate(0deg);
+		opacity:1;
+	}
+	65% {
+		left:59%; 
+		transform:rotate(0deg);
+		opacity:1;
+	}
+	100% {
+		left:100%; 
+		transform:rotate(-180deg);
+		opacity:0;
+	}
+}
+
+@-webkit-keyframes move {
+	0% {
+		left:0; 
+		opacity:0;
+	}
+	35% {
+		left:41%; 
+		transform:rotate(0deg); 
+		opacity:1;
+	}
+	65% {
+		left:59%; 
+		transform:rotate(0deg); 
+		opacity:1;
+	}
+	100% {
+		left:100%;
+		transform:rotate(-180deg); 
+		opacity:0;
+	}
+}
+
+@-o-keyframes move {
+	0% {
+		left:0; 
+		opacity:0;
+	}
+	35% {
+		left:41%; 
+		transform:rotate(0deg); 
+		opacity:1;
+	}
+	65% {
+		left:59%; 
+		transform:rotate(0deg); 
+		opacity:1;
+	}
+	100% {
+		left:100%; 
+		transform:rotate(-180deg); 
+		opacity:0;
+	}
+}
+
